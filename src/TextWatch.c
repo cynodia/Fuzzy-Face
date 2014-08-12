@@ -399,7 +399,8 @@ static void handle_battery_state(BatteryChargeState chargeState)
  */
 #if DEBUG
 
-static void up_single_click_handler(ClickRecognizerRef recognizer, void *context) {
+static void up_single_click_handler(ClickRecognizerRef recognizer, void *context)
+{
 	(void)recognizer;
 
 	t->tm_min += 5;
@@ -414,7 +415,8 @@ static void up_single_click_handler(ClickRecognizerRef recognizer, void *context
 	display_time(t);
 }
 
-static void down_single_click_handler(ClickRecognizerRef recognizer, void *context) {
+static void down_single_click_handler(ClickRecognizerRef recognizer, void *context)
+{
 	(void)recognizer;
 
 	t->tm_min -= 5;
@@ -429,7 +431,8 @@ static void down_single_click_handler(ClickRecognizerRef recognizer, void *conte
 	display_time(t);
 }
 
-static void click_config_provider(void *context) {
+static void click_config_provider(void *context)
+{
     window_single_click_subscribe(BUTTON_ID_UP, up_single_click_handler);
     window_single_click_subscribe(BUTTON_ID_DOWN, down_single_click_handler);
 }
@@ -441,7 +444,8 @@ static void sync_error_callback(DictionaryResult dict_error, AppMessageResult ap
 	APP_LOG(APP_LOG_LEVEL_DEBUG, "App Message Sync Error: %d", app_message_error);
 }
 
-static void sync_tuple_changed_callback(const uint32_t key, const Tuple* new_tuple, const Tuple* old_tuple, void* context) {
+static void sync_tuple_changed_callback(const uint32_t key, const Tuple* new_tuple, const Tuple* old_tuple, void* context)
+{
 	GTextAlignment alignment;
 	switch (key) {
 		case TEXT_ALIGN_KEY:
@@ -607,7 +611,8 @@ static void window_unload(Window *window)
 	destroy_toolbar(&toolbar);
 }
 
-static void handle_init() {
+static void handle_init()
+{
 	// Load settings from persistent storage
 	if (persist_exists(TEXT_ALIGN_KEY))
 	{
