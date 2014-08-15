@@ -45,8 +45,11 @@ Authors
 -------
 
 Thanks to all the people who contributed to the anscestor projects!
+
 [PebbleTextWatch][]
+
 [Swedish fuzzy text watch][]
+
 [Fuzzy Text International][]
 
 [PebbleTextWatch]: https://github.com/wearewip/PebbleTextWatch
