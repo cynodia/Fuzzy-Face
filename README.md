@@ -1,12 +1,12 @@
 Fuzzy Face
 ==========
 
-This is a watchface for the [Pebble][].  It is originally based on the
+This is a watchface for the Pebble smart-watch.  It is originally based on the
 [Fuzzy Text International][] by  that was again based on [PebbleTextWatch][]
 by Mihai Dumitrache, and [Swedish fuzzy text watch][] by Mattias Bäcklund.
 
 Read more about the background at
-[Fuzzy Text International][https://github.com/hallettj/Fuzzy-Text-International]
+[Fuzzy Text International].
 
 This version builds upon the work by all the oroginal authors: it supports
 multiple languages, provides options to change the visual style and supports
@@ -45,6 +45,10 @@ Authors
 -------
 
 Thanks to all the people who contributed to the anscestor projects!
+[PebbleTextWatch][]
+[Swedish fuzzy text watch][]
+[Fuzzy Text International][]
+
 [PebbleTextWatch]: https://github.com/wearewip/PebbleTextWatch
 [Swedish fuzzy text watch]: https://github.com/Sarastro72/Swedish-Fuzzy-Text-watch
 [Fuzzy Text International]: https://github.com/hallettj/Fuzzy-Text-International
